@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Image } from "react-bootstrap";
+import { MyImg, MyCol } from "./style.js";
 
 const Results = ({ res, folder, dataRes }) => {
   if (res) {
@@ -12,28 +13,28 @@ const Results = ({ res, folder, dataRes }) => {
 
     return (
       <>
-        <Col>
+        <MyCol>
           <h4>Original</h4>
-          <Image
+          <MyImg
             src={folder + res[0] + "_Binned_None_None_" + res[4] + ".png"}
             fluid
           />
-        </Col>
-        <Col>
+        </MyCol>
+        <MyCol>
           <h4>DAWA : {study[0].DAWA}</h4>
-          <Image src={folder + firstHalf + "DAWA_" + secHalf + ".png"} fluid />
-        </Col>
-        <Col>
+          <MyImg src={folder + firstHalf + "DAWA_" + secHalf + ".png"} fluid />
+        </MyCol>
+        <MyCol>
           <h4>AHP : {study[0].AHP}</h4>
-          <Image src={folder + firstHalf + "AHP_" + secHalf + ".png"} fluid />
-        </Col>
-        <Col>
+          <MyImg src={folder + firstHalf + "AHP_" + secHalf + ".png"} fluid />
+        </MyCol>
+        <MyCol>
           <h4>LaPlace : {study[0].Laplace}</h4>
-          <Image
+          <MyImg
             src={folder + firstHalf + "LaPlace_" + secHalf + ".png"}
             fluid
           />
-        </Col>
+        </MyCol>
       </>
     );
   } else {

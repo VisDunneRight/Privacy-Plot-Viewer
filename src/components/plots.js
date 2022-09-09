@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { MyImg, MyCol } from "./style.js";
+
 const Plots = ({ plotId, setPlot }) => {
   return (
     <>
