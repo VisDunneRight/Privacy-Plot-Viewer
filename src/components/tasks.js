@@ -1,11 +1,12 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
 const Tasks = ({ task, setTask, plotId, tasksType }) => {
-  const arr = ["Cluster", "Distribution", "Correlation"];
+  const arr = ["Clusters", "Distribution", "Correlation"];
   let validTasks = [];
-  if (plotId) {
+  if (plotId !== undefined) {
     validTasks = tasksType[plotId];
   }
+  console.log(tasksType, plotId, validTasks);
 
   return (
     <>
