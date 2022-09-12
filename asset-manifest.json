@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.186bc35c.js",
-    "static/js/787.87ae9e86.chunk.js": "/static/js/787.87ae9e86.chunk.js",
-    "static/media/answersParsed.csv": "/static/media/answersParsed.8ac5b504401e8f6d7869.csv",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.186bc35c.js.map": "/static/js/main.186bc35c.js.map",
-    "787.87ae9e86.chunk.js.map": "/static/js/787.87ae9e86.chunk.js.map"
+    "main.css": "/Privacy-Plot-Viewer/static/css/main.073c9b0a.css",
+    "main.js": "/Privacy-Plot-Viewer/static/js/main.e249f440.js",
+    "static/js/787.87ae9e86.chunk.js": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js",
+    "static/media/answersParsed.csv": "/Privacy-Plot-Viewer/static/media/answersParsed.8ac5b504401e8f6d7869.csv",
+    "index.html": "/Privacy-Plot-Viewer/index.html",
+    "main.073c9b0a.css.map": "/Privacy-Plot-Viewer/static/css/main.073c9b0a.css.map",
+    "main.e249f440.js.map": "/Privacy-Plot-Viewer/static/js/main.e249f440.js.map",
+    "787.87ae9e86.chunk.js.map": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.186bc35c.js"
+    "static/js/main.e249f440.js"
   ]
 }
