@@ -26,6 +26,7 @@ function App() {
     }
     console.log(tasksType[plotId], task);
     if (!tasksType[plotId].includes(task.toLowerCase())) {
+      setTask(undefined);
       return;
     }
     setFolder("Data/Final/Chart" + plotId + "/");
