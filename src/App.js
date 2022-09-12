@@ -21,17 +21,25 @@ function App() {
   const [tasksType, setTasksType] = useState(undefined);
 
   useEffect(() => {
-    if (!plotId || !binSize || !epsilon || !task) {
+    console.log(plotId, binSize, epsilon, task);
+    if (
+      plotId === undefined ||
+      binSize === undefined ||
+      epsilon === undefined ||
+      task === undefined
+    ) {
+      console.log("Shouldn't be here");
       return;
     }
-    console.log(tasksType[plotId], task);
+
     if (!tasksType[plotId].includes(task.toLowerCase())) {
+      setTask(undefined);
       return;
     }
     setFolder("Data/Final/Chart" + plotId + "/");
     const resArray = [plotId, task, "{0}", epsilon, binSize];
     setResults(resArray);
-  }, [plotId, binSize, epsilon, task]);
+  }, [plotId, binSize, epsilon, task, tasksType]);
 
   useEffect(() => {
     d3.csv(data).then(function (data) {

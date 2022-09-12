@@ -6,7 +6,6 @@ const Tasks = ({ task, setTask, plotId, tasksType }) => {
   if (plotId !== undefined) {
     validTasks = tasksType[plotId];
   }
-  console.log(tasksType, plotId, validTasks);
 
   return (
     <>
