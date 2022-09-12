@@ -21,19 +21,18 @@ function App() {
   const [tasksType, setTasksType] = useState(undefined);
 
   useEffect(() => {
-    console.log(plotId, binSize, epsilon, task);
     if (
       plotId === undefined ||
       binSize === undefined ||
       epsilon === undefined ||
       task === undefined
     ) {
-      console.log("Shouldn't be here");
       return;
     }
 
     if (!tasksType[plotId].includes(task.toLowerCase())) {
       setTask(undefined);
+      setResults(undefined);
       return;
     }
     setFolder("Data/Final/Chart" + plotId + "/");
