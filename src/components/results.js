@@ -29,6 +29,17 @@ const Results = ({ res, folder, dataRes }) => {
           <MyImg src={folder + firstHalf + "AHP_" + secHalf + ".png"} fluid />
         </MyCol>
         <MyCol>
+          <h4>AGrid : {study[0].AGrid}</h4>
+          <MyImg src={folder + firstHalf + "AGrid_" + secHalf + ".png"} fluid />
+        </MyCol>
+        <MyCol>
+          <h4>Geometric : {study[0].Geometric}</h4>
+          <MyImg
+            src={folder + firstHalf + "Geometric_" + secHalf + ".png"}
+            fluid
+          />
+        </MyCol>
+        <MyCol>
           <h4>LaPlace : {study[0].Laplace}</h4>
           <MyImg
             src={folder + firstHalf + "LaPlace_" + secHalf + ".png"}
