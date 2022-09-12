@@ -1,37 +1,29 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
-const Tasks = ({ task, setTask }) => {
+const Tasks = ({ task, setTask, plotId, tasksType }) => {
   const arr = ["Cluster", "Distribution", "Correlation"];
+  let validTasks = [];
+  if (plotId) {
+    validTasks = tasksType[plotId];
+  }
 
   return (
     <>
       <h4>Task</h4>
       <ListGroup as="ul">
         {arr.map((ele) => {
-          if (task === ele) {
-            return (
-              <ListGroup.Item
-                onClick={() => {
-                  setTask(ele);
-                }}
-                key={ele}
-                active
-              >
-                {ele}
-              </ListGroup.Item>
-            );
-          } else {
-            return (
-              <ListGroup.Item
-                onClick={() => {
-                  setTask(ele);
-                }}
-                key={ele}
-              >
-                {ele}
-              </ListGroup.Item>
-            );
-          }
+          return (
+            <ListGroup.Item
+              onClick={() => {
+                setTask(ele);
+              }}
+              key={ele}
+              active={task === ele}
+              disabled={!validTasks.includes(ele.toLowerCase())}
+            >
+              {ele}
+            </ListGroup.Item>
+          );
         })}
       </ListGroup>
     </>

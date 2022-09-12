@@ -18,9 +18,14 @@ function App() {
   const [results, setResults] = useState(undefined);
   const [folder, setFolder] = useState(undefined);
   const [dataRes, setDataRes] = useState(undefined);
+  const [tasksType, setTasksType] = useState(undefined);
 
   useEffect(() => {
     if (!plotId || !binSize || !epsilon || !task) {
+      return;
+    }
+    console.log(tasksType[plotId], task);
+    if (!tasksType[plotId].includes(task.toLowerCase())) {
       return;
     }
     setFolder("Data/Final/Chart" + plotId + "/");
@@ -32,6 +37,13 @@ function App() {
     d3.csv(data).then(function (data) {
       setDataRes(data);
     });
+    fetch("Data/tasks.json")
+      .then((res) => {
+        return res.json();
+      })
+      .then((jsonFile) => {
+        setTasksType(jsonFile);
+      });
   }, []);
   console.log(plotId, binSize, epsilon, task, folder, results);
   return (
@@ -47,7 +59,12 @@ function App() {
           <Epsilon setEpsilon={setEpsilon} epsilon={epsilon} />
         </Col>
         <Col md={2}>
-          <Tasks setTask={setTask} task={task} />
+          <Tasks
+            setTask={setTask}
+            task={task}
+            plotId={plotId}
+            tasksType={tasksType}
+          />
         </Col>
       </Row>
       <Row>
