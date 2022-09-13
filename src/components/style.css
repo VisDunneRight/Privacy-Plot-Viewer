@@ -1,0 +1,3 @@
+.list-group-item.disabled, .list-group-item:disabled {
+  background-color: #e7e6e6;
+}
