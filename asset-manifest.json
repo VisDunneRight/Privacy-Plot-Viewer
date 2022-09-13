@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Privacy-Plot-Viewer/static/css/main.073c9b0a.css",
-    "main.js": "/Privacy-Plot-Viewer/static/js/main.87370f70.js",
+    "main.css": "/Privacy-Plot-Viewer/static/css/main.ebd62d11.css",
+    "main.js": "/Privacy-Plot-Viewer/static/js/main.25ddf789.js",
     "static/js/787.87ae9e86.chunk.js": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js",
     "static/media/answersParsed.csv": "/Privacy-Plot-Viewer/static/media/answersParsed.8ac5b504401e8f6d7869.csv",
     "index.html": "/Privacy-Plot-Viewer/index.html",
-    "main.073c9b0a.css.map": "/Privacy-Plot-Viewer/static/css/main.073c9b0a.css.map",
-    "main.87370f70.js.map": "/Privacy-Plot-Viewer/static/js/main.87370f70.js.map",
+    "main.ebd62d11.css.map": "/Privacy-Plot-Viewer/static/css/main.ebd62d11.css.map",
+    "main.25ddf789.js.map": "/Privacy-Plot-Viewer/static/js/main.25ddf789.js.map",
     "787.87ae9e86.chunk.js.map": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.87370f70.js"
+    "static/css/main.ebd62d11.css",
+    "static/js/main.25ddf789.js"
   ]
 }
