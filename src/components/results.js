@@ -42,7 +42,7 @@ const Results = ({ res, folder, dataRes }) => {
         <MyCol>
           <h4>LaPlace : {study[0].Laplace}</h4>
           <MyImg
-            src={folder + firstHalf + "LaPlace_" + secHalf + ".png"}
+            src={folder + firstHalf + "Laplace_" + secHalf + ".png"}
             fluid
           />
         </MyCol>
