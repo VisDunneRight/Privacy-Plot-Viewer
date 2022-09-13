@@ -4,12 +4,12 @@ import { MyImg, MyCol } from "./style.js";
 
 const Results = ({ res, folder, dataRes }) => {
   if (res) {
-    const firstHalf = res[0] + "_" + res[1] + "_";
+    // console.log(res[1]);
+    let firstHalf = res[0] + "_" + res[1] + "_";
     const secHalf = res[3] + "_" + res[4];
-    console.log(firstHalf.toLowerCase() + secHalf);
-    const study = dataRes.filter(
-      (ele) => ele.Index === firstHalf.toLowerCase() + secHalf
-    );
+    firstHalf = firstHalf.toLowerCase();
+
+    const study = dataRes.filter((ele) => ele.Index === firstHalf + secHalf);
 
     return (
       <>
