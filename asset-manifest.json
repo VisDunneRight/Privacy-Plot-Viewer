@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Privacy-Plot-Viewer/static/css/main.ebd62d11.css",
-    "main.js": "/Privacy-Plot-Viewer/static/js/main.783967bc.js",
+    "main.js": "/Privacy-Plot-Viewer/static/js/main.9bb39010.js",
     "static/js/787.87ae9e86.chunk.js": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js",
     "static/media/answersParsed.csv": "/Privacy-Plot-Viewer/static/media/answersParsed.8ac5b504401e8f6d7869.csv",
     "index.html": "/Privacy-Plot-Viewer/index.html",
     "main.ebd62d11.css.map": "/Privacy-Plot-Viewer/static/css/main.ebd62d11.css.map",
-    "main.783967bc.js.map": "/Privacy-Plot-Viewer/static/js/main.783967bc.js.map",
+    "main.9bb39010.js.map": "/Privacy-Plot-Viewer/static/js/main.9bb39010.js.map",
     "787.87ae9e86.chunk.js.map": "/Privacy-Plot-Viewer/static/js/787.87ae9e86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebd62d11.css",
-    "static/js/main.783967bc.js"
+    "static/js/main.9bb39010.js"
   ]
 }
